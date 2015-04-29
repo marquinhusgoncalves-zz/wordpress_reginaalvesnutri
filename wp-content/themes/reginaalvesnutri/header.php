@@ -8,6 +8,52 @@
 		<title><?php bloginfo('name'); ?></title>
 		<?php wp_head(); ?>
 		<script type="text/javascript">jQuery(function($) {$("li#menu-item-59").children("a").attr('href', "#");});</script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>	
+	    <script type="text/javascript">
+	
+	        function initialize() {
+	            var myLatlng = new google.maps.LatLng(-23.606657, -46.652769);
+	            var mapOptions = {
+	                zoom: 18,
+	                center: myLatlng,
+	                disableDefaultUI: false,
+	                scrollwheel: false,
+	                draggable: false
+	            }
+	            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	
+	            var marker = new google.maps.Marker({
+	                position: myLatlng,
+	                map: map,
+	                title: 'Regina Alves Nutricionista'
+	            });
+	
+	            var styles = [
+	                {
+	                    stylers: [
+	                        { hue: "#6C1F1F" },
+	                        { saturation: -20 }
+	                    ]
+	                },{
+	                    featureType: "road",
+	                    elementType: "geometry",
+	                    stylers: [
+	                        { lightness: 100 },
+	                        { visibility: "simplified" }
+	                    ]
+	                },{
+	                    featureType: "road.local",
+	                    elementType: "labels",
+	                }
+	            ];
+	
+	            map.setOptions({styles: styles});
+	        }
+	
+	        google.maps.event.addDomListener(window, 'load', initialize);
+	
+	    </script>
+
 	</head>
 
 <body>
@@ -15,9 +61,9 @@
 		
 		<header id = "masthead" class = "container" role = "banner" style = "">
 
-			<div class = "col-xs-1 col-sm-3 col-md-3 col-lg-3" style = "margin: 10px 0; padding: 0">
+			<div class = "col-xs-1 col-sm-3" style = "margin: 10px 0; padding: 0">
 				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>" title = '<?php bloginfo( 'name' ); ?>' rel="home">
-					<img src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" />
+					<img id="logo" src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" />
 				</a>
 			</div>
 

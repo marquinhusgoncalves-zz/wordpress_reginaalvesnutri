@@ -1,21 +1,21 @@
-<?php get_header(); ?>
-
-<div id="conteudo">
-        <div id="artigos">
-			<?php if(have_posts()) :while (have_posts()) : the_post(); ?>
-			<article class="post">
-				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-				<p>Postado por <?php the_author(); ?> em <?php the_time('d/M/Y'); ?></p>
-				<?php the_content(); ?>
-			</article>
-		</div>
-	<?php endwhile;
-
-	else :
-		echo '<p> Nenhum artigo encontrado </p>';
-
-	endif; ?>
-
-</div>
-
-<?php get_footer(); ?>
+<?php
+$post = $wp_query->post;
+/* se for a categoria artigos */
+if (in_category('artigos')) {
+include (TEMPLATEPATH.'/single-artigos.php');
+return;
+}
+/* se for a categoria dicas */	
+if (in_category('dicas')) {
+include (TEMPLATEPATH.'/single-dicas.php');
+return;
+}
+/* se for a categoria noticias */	
+if (in_category('noticias')) {
+include (TEMPLATEPATH.'/single-noticias.php');
+return;
+}
+/* se não for nenhuma das categorias acima */
+else { ?>
+<? include (TEMPLATEPATH.'/single-default.php'); ?>
+<?php } ?>
