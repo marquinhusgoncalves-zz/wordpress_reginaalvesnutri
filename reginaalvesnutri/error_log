@@ -1,0 +1,2 @@
+[07-May-2015 11:23:19 America/Sao_Paulo] PHP Fatal error:  Call to undefined function get_header() in /home/reginaa/public_html/wp-content/themes/reginaalvesnutri/category-dicas.php on line 1
+[07-May-2015 11:26:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined function get_header() in /home/reginaa/public_html/wp-content/themes/reginaalvesnutri/category-dicas.php on line 1
