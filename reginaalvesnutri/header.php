@@ -60,7 +60,7 @@
 <body>
 	<div id="stage">
 		
-		<header id = "masthead" class = "container" role = "banner" style = "">
+		<header id = "masthead" class = "container" role = "banner">
 
 			<div class = "col-xs-1 col-sm-3" style = "margin: 10px 0; padding: 0">
 				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>" title = '<?php bloginfo( 'name' ); ?>' rel="home">

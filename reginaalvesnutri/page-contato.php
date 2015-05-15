@@ -4,7 +4,7 @@ Template Name: Contato
 */
 
 $ph_name = "Qual o seu nome?";
-$ph_email = "E o seu Email?";
+$ph_email = "E o seu e-mail?";
 $ph_subject = "Sobre o que seria o contato?";
 $ph_message = "Escreva aqui...";
 
@@ -31,10 +31,8 @@ get_header(); ?>
 
     <div class="contato-box" style="min-height: 340px">
         <div class="col-lg-4 col-md-4">
-            <h1 style="color: white">Natureza do Ser</h1></br>
-            <h4 class="contato" style="margin-top: -10px">Alameda Uananá, 200 - Moema</br>
-            São Paulo - SP</br>
-            F. 11 5084-3568</br>
+            <h1 style="color: white">Entre em contato e tire suas dúvidas.</h1></br>
+            <h4 class="contato" style="margin-top: -10px">F. 11 5084-3568</br>
             C. 11 97278-9146 | 19 98174-6538</br>
             <a href="mailto:regina@reginaalvesnutri.com.br">regina@reginaalvesnutri.com.br</a></h4>
         </div>
@@ -79,5 +77,5 @@ get_header(); ?>
                 <?php } ?>
         </div>
     </div>
-    <div id="map-canvas"></div>    
+    <!-- <div id="map-canvas"></div>  Retirado o mapa a pedido do cliente-->   
 <?php get_footer(); ?>
