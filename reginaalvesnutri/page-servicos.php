@@ -16,8 +16,8 @@
         <div class="col-xs-12 col-sm-12 col-md-3 serv-img"><img class="img-radius" src="<?php bloginfo('stylesheet_directory'); ?>/img/02_box.jpg" width="270px" /></div>
         <div class="col-xs-12 col-sm-12 col-md-3 serv-img"><img class="img-480" src="<?php bloginfo('stylesheet_directory'); ?>/img/02_box_480.jpg" width="100%" /></div>
         <div class="serv-box">
-                <h1>GRUPOS DE VIVÊNCIA</h1>
-                <h4 class="servicos">Vivência com palestra, orientação alimentar para elaboração das principais refeições com preparação “in loco” do café da manhã</h4>
+                <h1>OFICINAS DE CULINÁRIA</h1>
+                <h4 class="servicos">De maneira descontraída, o “verdadeiro ato de comer" é abordado segundo os princípios da Medicina Chinesa e com preparações culinánias "in loco" os participantes são orientandos como extrair a potencialidade existente nos alimentos de uma maneira até então desconhecia.</h4>
         </div>
     </div>
 

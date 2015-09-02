@@ -32,8 +32,7 @@ get_header(); ?>
     <div class="contato-box" style="min-height: 340px">
         <div class="col-lg-4 col-md-4">
             <h1 style="color: white">Entre em contato e tire suas dúvidas.</h1></br>
-            <h4 class="contato" style="margin-top: -10px">F. 11 5084-3568</br>
-            C. 11 97278-9146 | 19 98174-6538</br>
+            <h4 class="contato" style="margin-top: -10px">C. 11 97278-9146 | 19 98174-6538</br>
             <a href="mailto:regina@reginaalvesnutri.com.br">regina@reginaalvesnutri.com.br</a></h4>
         </div>
 
