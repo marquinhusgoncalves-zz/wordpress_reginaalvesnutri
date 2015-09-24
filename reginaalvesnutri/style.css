@@ -46,11 +46,11 @@ article.post:last-of-type {
 .site-footer {
 	margin-top: 30px;
 }
-#stage {
+/*#stage {
     position: absolute;
     width: 100%;
     height: 100%;
-}
+}*/
 .main {
     margin-top: 0px;
 }
@@ -67,6 +67,7 @@ article.post:last-of-type {
     text-align: center;
 }
 .social {
+    width: 50px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
