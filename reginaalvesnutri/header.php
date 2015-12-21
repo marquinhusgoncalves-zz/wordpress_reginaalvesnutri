@@ -15,6 +15,7 @@
 </head>
 
 <body class="container">
+<?php include_once("analyticstracking.php") ?>
 	<header >
 		<div class="col-xs-1 col-sm-3" style="margin: 10px 0; padding: 0">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title='<?php bloginfo( 'name' ); ?>' rel="home">
